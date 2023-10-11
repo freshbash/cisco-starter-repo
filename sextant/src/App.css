@@ -2,32 +2,6 @@
   text-align: center;
 }
 
-#banner {
-  text-align: center;
-  background-color: rgb(123, 177, 248);
-  padding: 1.34rem 0;
-}
-
-#banner > h1 {
-  margin: 0;
-}
-
-#exhibit {
-  border: 1px solid black;
-  border-radius: 0.3125rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#exhibit > h3 {
-  margin: 0;
-}
-
-#metric-grid {
-  display: grid;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
