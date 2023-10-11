@@ -10,3 +10,32 @@
 #latency-div > h2 {
     text-align: center;
 }
+
+#legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#dark-green, #light-green, #orange, #red {
+    display: inline-block;
+    height: 0.5rem;
+    margin: 0 0.5rem;
+    width: 1rem;
+}
+
+#dark-green {
+    background-color: darkgreen;
+}
+
+#light-green {
+    background-color: lightgreen;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#red {
+    background-color: red;
+}

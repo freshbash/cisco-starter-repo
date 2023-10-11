@@ -20,9 +20,11 @@ function Latency() {
             if (timeElapsed > 100) {
                 setFontColor('red');
             } else if (timeElapsed > 40 && timeElapsed <= 100) {
-                setFontColor('darkorange');
+                setFontColor('orange');
+            } else if (timeElapsed > 20 && timeElapsed <= 40) {
+                setFontColor('lightgreen');
             } else {
-                setFontColor('green');
+                setFontColor('darkgreen');
             }
         })
     })
@@ -31,6 +33,24 @@ function Latency() {
         <div id="latency-div">
             <h4>Latency:</h4>
             <h2 style={{ color:fontColor }}><span>{latency}</span> ms</h2>
+            <div id="legend">
+                <div>
+                    <div id="dark-green"></div>
+                    <span>Excellent</span>
+                </div>
+                <div>
+                    <div id="light-green"></div>
+                    <span>Good</span>
+                </div>
+                <div>
+                    <div id="orange"></div>
+                    <span>Acceptable</span>
+                </div>
+                <div>
+                    <div id='red'></div>
+                    <span>Bad</span>
+                </div>
+            </div>
         </div>
     )
 }
