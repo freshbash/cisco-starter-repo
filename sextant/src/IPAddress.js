@@ -1,4 +1,4 @@
-import "./IPAddress.css";
+import "./panel-styles.css";
 
 import { useState, useEffect } from "react";
 
@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 function IPAddress({version}) {
 
     // State to store the address
-    const [address, setAddress] = useState({});
+    const [address, setAddress] = useState({ip: "...."});
 
     //When component is mounted get the ipaddress of the client machine
     useEffect(() => {
@@ -32,7 +32,7 @@ function IPAddress({version}) {
 
     return (
         <div id="ip-div">
-            <h4>{version === 4 ? "IPv4" : "IPv6"}</h4>
+            <h4>{version === 4 ? "IPv4:" : "IPv6:"}</h4>
             <h3 id="ip-address">{address.ip}</h3>
         </div>
     )

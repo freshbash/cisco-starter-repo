@@ -1,0 +1,12 @@
+#latency-div, #ip-div {
+    background-color: rgb(231, 231, 231);
+    border-radius: 0.3125rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 95%;
+}
+
+#latency-div > h2 {
+    text-align: center;
+}
