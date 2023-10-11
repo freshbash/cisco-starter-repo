@@ -1,10 +1,10 @@
 import './Banner.css';
 
 //Banner component
-function Banner() {
+function Banner({title}) {
 	return (
 		<div id="banner">
-			<h1>Sextant</h1>
+			<h1>{title}</h1>
 		</div>
 	)
 }

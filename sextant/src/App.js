@@ -5,8 +5,8 @@ import Exhibit from './Exhibit.js';
 function App() {
   	return (
 		<div>
-			<Banner />
-			<Exhibit />
+			<Banner title={"Sextant"}/>
+			<Exhibit heading={"System Performance Metrics"}/>
 		</div>		
   	);
 }

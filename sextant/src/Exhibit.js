@@ -1,11 +1,11 @@
 import './Exhibit.css';
 
 //Component to contain all the metrics
-const Exhibit = () => {
+const Exhibit = ({heading}) => {
 	return (
 		<div id="exhibit">
-			<h3>System Performance Metrics</h3>
-			<div id="metric-grid"></div>
+			<h3>{heading}</h3>
+			<div id="grid"></div>
 		</div>
 	)
 }
