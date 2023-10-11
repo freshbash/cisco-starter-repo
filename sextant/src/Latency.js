@@ -36,19 +36,19 @@ function Latency() {
             <div id="legend">
                 <div>
                     <div id="dark-green"></div>
-                    <span>Excellent</span>
+                    <span>Excellent(0 - 20)</span>
                 </div>
                 <div>
                     <div id="light-green"></div>
-                    <span>Good</span>
+                    <span>Good(21 - 40)</span>
                 </div>
                 <div>
                     <div id="orange"></div>
-                    <span>Acceptable</span>
+                    <span>Acceptable(41 - 100)</span>
                 </div>
                 <div>
                     <div id='red'></div>
-                    <span>Bad</span>
+                    <span>Bad(100 and above)</span>
                 </div>
             </div>
         </div>
