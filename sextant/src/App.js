@@ -6,7 +6,7 @@ function App() {
   	return (
 		<div>
 			<Banner title={"Sextant"}/>
-			<Exhibit heading={"System Performance Metrics"}/>
+			<Exhibit heading={"Network Metrics"}/>
 		</div>		
   	);
 }
