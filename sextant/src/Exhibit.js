@@ -1,14 +1,12 @@
 import './Exhibit.css';
-import IPAddress from './IPAddress';
 
 //Component to contain all the metrics
-const Exhibit = ({heading}) => {
+const Exhibit = props => {
 	return (
 		<div id="exhibit">
-			<h3>{heading}</h3>
+			<h3>{props.heading}</h3>
 			<div id="grid">
-				<IPAddress version={4}/>
-				<IPAddress version={6}/>
+				{props.children}
 			</div>
 		</div>
 	)
