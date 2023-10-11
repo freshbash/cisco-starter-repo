@@ -1,9 +1,11 @@
 import './Latency.css';
 import { useEffect, useState } from "react";
 
+//Create a WebSocket object
+const socket = new WebSocket("ws://localhost:55455");
+
 //Component to display latency
 function Latency() {
-    const [socket, setSocket] = useState(new WebSocket("ws://localhost:55455"));
     const [latency, setLatency] = useState(0);
 
     //Listen for messages from the node server
